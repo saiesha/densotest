@@ -1,0 +1,21 @@
+
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+  int x, p, val;
+  
+  scanf("%d %d",&x,&p);
+  val=x;
+  while(1)
+  {
+    x=(100-p)*x/100; 
+    val=val+x;
+    if(x<1)
+    break;
+  }
+  printf("%d",val);
+ 
+  return 0;
+}
